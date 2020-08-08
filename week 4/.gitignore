@@ -1,0 +1,6 @@
+data/*
+.vscode/*
+__pycache__/*
+*.csv
+*.ipynb
+!data/ml-latest/df.csv
