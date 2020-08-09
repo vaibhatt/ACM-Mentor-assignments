@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 from recommendation import recommend
-import flask
+from flask import Flask, request, render_template, redirect, url_for
 
 app = flask.Flask(__name__,template_folder='templates')
 
