@@ -23,4 +23,4 @@ def process_df(movies_df,ratings_df,thresh = 10000):
 df = process_df(movies_df,ratings_df)
 
 if __name__=="__main__":
-  df.to_csv(r"E:\ACM Mentor\week 4\data\ml-latest\df1.csv")
+  df.to_csv(r"df.csv")

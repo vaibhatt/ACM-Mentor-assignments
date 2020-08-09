@@ -15,7 +15,7 @@ def unique(list):
       unique.append(name)
   return unique
   
-df = pd.read_csv(r"E:\ACM Mentor\week 4\data\ml-latest\df.csv")
+df = pd.read_csv(r"df.csv")
 
 pivot_table = make_pivot(df)
 movie_matrix = csr_matrix(pivot_table) #creates csr matrix
