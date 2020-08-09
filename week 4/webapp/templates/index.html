@@ -1,0 +1,131 @@
+{% block content %}
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset = 'utf = 8'>
+		<title>Recommendation System</title>
+		<link rel="stylesheet" href="style.css">
+		
+		<style type = "text/css">
+		
+			
+			@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+			
+			body {
+			
+				margin : 0;
+				padding : 0;
+				font-family : arial;
+				
+			
+			}
+			
+			.container {
+			
+				position : absolute ;
+				left:0;
+				top : 0;
+				width : 100%;
+				height : 100vh;
+				
+				background-size : cover;
+			
+			}
+			
+			.outer{
+			
+				position : absolute;
+				background-image : url('https://cdn.wallpapersafari.com/29/44/linm7I.jpg');
+				left : 0;
+				top : 0;
+				width : 100%;
+				height : 100vh;
+				background-repeat:no-repeat;
+				background-attachment:fixed;
+				background-size:100% 100%;
+			
+			
+			}
+			.head{
+			
+				margin:40px 500px;
+				color : white;
+			
+			}
+			
+			 .box{
+				
+					
+					width : 500px;
+					position : absolute;
+					top : 40%;
+					left : 50%;
+					transform : translate(-50%, -50%);
+					color : white;
+					background-color: white;
+					box-shadow: 5px 10px #888888;
+			
+				}
+			
+				
+			
+				.input{
+			
+					
+					overflow : hidden;
+					font-size : 20px;
+					padding:8px 4px 8px 4px;
+					margin : 12px 15px ;
+					border : 2px solid black;
+					width : 400px;
+					
+			
+				}
+				
+				
+				.btn{
+			
+					width : 40%;
+					background: blue;
+					border : 2px solid black;
+					color : white;
+					
+					font-size: 18px;
+					cursor: pointer;
+					float:right;
+					padding:5px 5px;
+				
+			
+				}
+				.para{
+				
+					color:white;
+					font-size:20px;
+					margin:280px;
+				
+				}
+			
+			
+			
+		</style>
+		
+	<body>
+		<div class = "container">
+
+			<div class = "outer">
+				<h1 class="head">Movie Recommendation System</h1>]
+				<div class = "box">
+					<input class = "input" type = "text" placeholder ="Name of the movie" name = "movie" value = "">
+					<input class = "btn" type = "button" name = "submit" value = "Submit">
+				</div>
+				
+				<p class="para">The model is based on <i>collaborative filtering</i> technique used to<i> recommend movies</i> based on the movie seen previously. The dataset used for the algorithm is movie lens dataset takem form <i><a href="https://grouplens.org/datasets/movielens/" style="color:white">Movielens</a></i></p>
+			</div>
+
+		</div>
+	</body>
+	
+	
+</html>
+{% endblock %}
