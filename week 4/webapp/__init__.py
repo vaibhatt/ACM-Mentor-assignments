@@ -19,4 +19,4 @@ def get_movie():
 		num_recommends = 10
 		out_df = recommendation.recommend(movie_name, num_recommends)
 
-		return render_template("out.html", name = "Recommended Movies", data = x.to_html())
+		return render_template("out.html", name = "Recommended Movies", data = out_df.to_html())
